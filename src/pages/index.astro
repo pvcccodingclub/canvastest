@@ -1,6 +1,13 @@
 ---
 import Canvas from '../canvas';
 
+/*
+ * Note: because we're testing server-side code, we set `output: "server"` in `astro.config.mjs`.
+ * On our main site, it's faster to keep `output: "static"` and only enable server-side code when needed:
+ * 
+ * export const prerender = false;
+*/
+
 const canvas = new Canvas(Astro);
 ---
 
