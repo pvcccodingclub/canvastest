@@ -10,5 +10,8 @@
   "observability": {
     "enabled": true
   },
-  "upload_source_maps": true
+  "upload_source_maps": true,
+  "vars": {
+    "CANVAS_URL": "https://learn.vccs.edu/login/oauth2/"
+  }
 }

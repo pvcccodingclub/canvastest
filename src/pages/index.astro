@@ -1,10 +1,13 @@
 ---
-const { env } = Astro.locals.runtime;
+import Canvas from '../canvas';
+
+const canvas = new Canvas(Astro);
 ---
 
 <!doctype html>
 <html lang="en">
 	<body>
-		<code>{JSON.stringify(Object.keys(env), null, 2)}</code>
+		<h1>Test: User Info</h1>
+		<pre>{JSON.stringify(await canvas.getUser(), null, 4)}</pre>
 	</body>
 </html>
